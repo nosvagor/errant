@@ -1,2 +1,4 @@
 # errant
-a medium contrast, material-esque, color scheme 
+a medium contrast, material-esque, color scheme
+
+note: not started, WIP.
