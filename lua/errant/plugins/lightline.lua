@@ -7,19 +7,19 @@ M.init = function(theme)
 		return
 	end
 
-	local bg0 = theme.GruvboxBg0.fg.hex
-	local bg1 = theme.GruvboxBg1.fg.hex
-	local bg2 = theme.GruvboxBg2.fg.hex
-	local bg4 = theme.GruvboxBg4.fg.hex
-	local fg1 = theme.GruvboxFg1.fg.hex
-	local fg4 = theme.GruvboxFg4.fg.hex
+	local bg0 = theme.ErrantBg0.fg.hex
+	local bg1 = theme.ErrantBg1.fg.hex
+	local bg2 = theme.ErrantBg2.fg.hex
+	local bg4 = theme.ErrantBg4.fg.hex
+	local fg1 = theme.ErrantFg1.fg.hex
+	local fg4 = theme.ErrantFg4.fg.hex
 
-	local yellow = theme.GruvboxYellow.fg.hex
-	local blue = theme.GruvboxBlue.fg.hex
-	local aqua = theme.GruvboxAqua.fg.hex
-	local orange = theme.GruvboxOrange.fg.hex
-	local red = theme.GruvboxRed.fg.hex
-	local green = theme.GruvboxGreen.fg.hex
+	local yellow = theme.ErrantYellow.fg.hex
+	local blue = theme.ErrantBlue.fg.hex
+	local aqua = theme.ErrantAqua.fg.hex
+	local orange = theme.ErrantOrange.fg.hex
+	local red = theme.ErrantRed.fg.hex
+	local green = theme.ErrantGreen.fg.hex
 
 	local lightline_theme = {
 		normal = {
@@ -63,7 +63,7 @@ M.init = function(theme)
 	}
 
 	local ll_filled = vim.fn["lightline#colorscheme#fill"](lightline_theme)
-	vim.g["lightline#colorscheme#gruvbox#palette"] = ll_filled
+	vim.g["lightline#colorscheme#errant#palette"] = ll_filled
 	vim.schedule(function()
 		vim.fn["lightline#disable"]()
 		vim.fn["lightline#enable"]()

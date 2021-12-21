@@ -1,7 +1,7 @@
 -- 3rd party plugins highlights
 local lush = require("lush")
-local base = require("gruvbox.base")
-local styles = require("gruvbox.settings").styles
+local base = require("errant.base")
+local styles = require("errant.settings").styles
 
 local plugins = lush(function()
 	return {

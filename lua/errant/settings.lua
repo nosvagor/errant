@@ -1,5 +1,5 @@
--- gruvbox settings handler
-local utils = require("gruvbox.utils")
+-- errant settings handler
+local utils = require("errant.utils")
 
 local settings = {
   contrast_dark = "medium",
@@ -34,50 +34,50 @@ local styles = {
 
 -- setting default values
 for k, val in pairs(settings) do
-  local key = "gruvbox_" .. k
+  local key = "errant_" .. k
   if vim.g[key] == nil then
     vim.g[key] = val
   end
 end
 
 -- styles check
-if not utils.tobool(vim.g.gruvbox_bold) then
+if not utils.tobool(vim.g.errant_bold) then
   styles.bold = "NONE"
 end
 
-if not utils.tobool(vim.g.gruvbox_underline) then
+if not utils.tobool(vim.g.errant_underline) then
   styles.underline = "NONE"
 end
 
-if not utils.tobool(vim.g.gruvbox_italic) then
+if not utils.tobool(vim.g.errant_italic) then
   styles.italic = "NONE"
 end
 
-if not utils.tobool(vim.g.gruvbox_inverse) then
+if not utils.tobool(vim.g.errant_inverse) then
   styles.inverse = "NONE"
 end
 
-if not utils.tobool(vim.g.gruvbox_undercurl) then
+if not utils.tobool(vim.g.errant_undercurl) then
   styles.undercurl = "NONE"
 end
 
-if utils.tobool(vim.g.gruvbox_invert_signs) then
+if utils.tobool(vim.g.errant_invert_signs) then
   styles.invert_signs = "inverse"
 end
 
-if not utils.tobool(vim.g.gruvbox_invert_selection) then
+if not utils.tobool(vim.g.errant_invert_selection) then
   styles.invert_selection = "NONE"
 end
 
-if utils.tobool(vim.g.gruvbox_invert_tabline) then
+if utils.tobool(vim.g.errant_invert_tabline) then
   styles.invert_tabline = "inverse"
 end
 
-if not utils.tobool(vim.g.gruvbox_italicize_comments) then
+if not utils.tobool(vim.g.errant_italicize_comments) then
   styles.italic_comments = "NONE"
 end
 
-if utils.tobool(vim.g.gruvbox_italicize_strings) then
+if utils.tobool(vim.g.errant_italicize_strings) then
   styles.italic_strings = "italic"
 end
 
